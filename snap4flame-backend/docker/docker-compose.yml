@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  snap4frame-backend:
+    build:
+      context: .
+      dockerfile: ./docker/Dockerfile
+    # container_name: snap4frame-backend
+    # image: snap4frame-backend
+    ports:
+      - "80:80"
+    env_file:
+      - .env
